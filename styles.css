@@ -1,61 +1,223 @@
-/* Optional: Customize navbar style */
-/* Apply Montserrat font to the entire page */
+                      /* ---------- Common CSS ------------- */
+
 body {
   font-family: 'Montserrat', sans-serif;
+ }
+
+.display-1 {
+  font-size: 40px;
+  line-height: 120%;
+}
+.display-2{
+  font-size: 36px;
+  line-height: 120%;
+}
+.title-1{
+  font-size: 30px;
+  line-height: 120px;
+}
+.title-2{
+  font-size: 24px;
+  line-height: 150%;
+}
+.Subtittle{
+  font-size: 22px;
+  line-height: 150%;
+}
+.body-1{
+  font-size: 20px;
+  line-height:150%;
+}
+.body-2{
+  font-size: 18px;
+  line-height: 150%;
+}
+.body-3{
+  font-size: 16px;
+  line-height: 150%;
+}
+.body{
+  font-size: 14px;
+  line-height: 150%;
 }
 
+
+
+          /* ----------------Navbar CSS------------------ */
+
 .navbar {
-  background-color: #370061; 
+  background-color: #370061;
+  max-height: 71px;
+
 }
+
 .navbar-nav .nav-text:hover {
-  color: #FFD700 !important; /* Gold text on hover */
+  color: #FFD700 !important;
 }
-.nav-background{
- padding-top: 20px;
- padding-bottom: 20px;
+
+.nav-background {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.nav-text{
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-color: white !important;
+
+.nav-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white !important;
 }
-.nav-content{
+
+.nav-content {
   display: flex;
   gap: 24px;
 }
-.login-btn{
- padding:10px 18px;
- color: white;
- background-color: transparent;
- border-color: white;
- border-radius: 4px;
+
+.login-btn {
+  padding: 10px 18px;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 4px;
 }
-.register-btn{
+
+.register-btn {
   color: #370061 !important;
   border-color: white;
   border-radius: 4px;
-  padding:10px 18px;
+  padding: 10px 18px;
 }
+
 @media (max-width: 768px) {
-    button {
-        width: 50%;
-    }
+  button {
+    width: 50%;
+  }
 }
 
 .navbar .container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-.navbar-toggler{
-  width:20%;
+.navbar-toggler {
+  width: 20%;
   color: white;
 }
 
 
 
+             /* ---------------------------Footer CSS--------------------------------  */
 
 
 
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
 
+.background {
+  background-color: #0E0E0E;
+
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.footer-column {
+  padding: 10px;
+}
+
+.quick-links-1 {
+  margin-bottom: 5px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #D1D1D1;
+}
+
+.footer-heading {
+  font-size: 18px
+}
+
+.email-button {
+  padding: 10px 18px;
+}
+
+.column4 {
+  gap: 36px;
+}
+
+.column1 {
+  gap: 20px;
+}
+
+.column {
+  gap: 40px;
+}
+
+.svg {
+  gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer2 {
+  background-color: #370061;
+  max-height: 79px;
+}
+
+.footer2-text {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 24px 20px;
+}
+
+                       /* ------------------Modul Race Matrix------------------------- */
+
+                       
+.text-div{
+  gap: 20px;
+}
+.race-matrix-heading{
+  font-size: 24px;
+  line-height: 33x;
+}    
+.race-matrix-text{
+  font-size: 14px;
+  line-height: 21px;
+  color: #545454;
+}    
+.span-text{
+  color: #370061;
+  font-size: 14px;
+  line-height: 21px;
+}    
+.race-matrix-img{
+  max-width: 570px;
+  max-height: 320px;
+} 
+.race-matrix{
+  color: #7200CB;
+  line-height: 29px;
+  font-size: 24px;
+
+}       
