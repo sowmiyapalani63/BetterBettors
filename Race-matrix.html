@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BettorBetters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#370061;">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#" ><img src="./assest/image/Logo.png" alt="logo" class="w-100"></a>
+    
+            <!-- Toggler Button (hidden on large screens) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="offcanvas offcanvas-end  "style="background-color:#370061;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel" ><img src="./assest/image/Logo.png" alt="logo" class="w-100"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: #370061;">
+                    <!-- Center the navbar items -->
+                    <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white text-7 fw-medium" aria-current="page" href="#" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-7 fw-medium" href="#" >Pays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-7 fw-medium" href="#" >Modules</a>
+                        </li>  <li class="nav-item">
+                            <a class="nav-link text-white text-7 fw-medium" href="#" >Subscribe</a>
+                        </li>
+                        
+                    </ul>
+    
+                    <!-- LogIn form aligned properly -->
+                    <form class="d-flex align-items-center justify-content-center navbar-gap">
+                        <button class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap" type="submit">Log In</button>
+                        <button class="btn bg-white  text-7 fw-medium" style="color: #370061;" type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+   
+
+
+    <section class="container py-4">
+        <h5 class="race-matrix-heading font-weight-medium text-center py-5">Introducing Race Matrix: Unlocking Your
+            Betting
+            Potential
+        </h5>
+        <div class="row align-items-center matrix-head ">
+            <!-- Text Content Section -->
+            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column text-div">
+                <span class="race-matrix-text font-weight-medium mb-3">
+                    Are you tired of piecing together fragmented information from various sources?
+                    At <span class="span-text font-weight-medium">BetterBettors</span> we understand the need for a
+                    comprehensive view of race days in Australia and New Zealand.
+                    That's why we've developed the Race Matrix module – a game changer for punters like you.
+                </span>
+                <span class="race-matrix-text font-weight-medium">
+                    Gone are the days when sticking to one bookie limited your profit potential. Now, with multiple
+                    bookies at your disposal, you can take advantage of various promotions and minimize your betting
+                    risks. But finding the best opportunities can be challenging – until now.
+                </span>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column-reverse flex-lg-row">
+                <img src="./assest/image/Horse-img.png" alt="Horse-img" class="race-matrix-img w-100">
+            </div>
+        </div>
+
+
+        <div class="text-center race-matrix font-weight-medium py-5 ">Race Matrix</div>
+        <div class="row d-flex justify-content-between">
+            <!-- First Card -->
+            <div class="col-sm-12 col-lg-4 mb-4 d-flex">
+                <div class="card border rounded-4 p-3 d-flex flex-column">
+                    <div class="card-body d-flex flex-column flex-grow-1 gap-4">
+                        <h5 class="card-title mb-3 subtitle">Complete Picture</h5>
+                        <p class="card-text mb-3 fw-medium matrix-color">
+                            Get all the vital information in one convenient grid chart. No more tedious LogIning – we
+                            will collect it all for you.
+                        </p>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color">No. of horses running in each race (after
+                                scratchings)</p>
+                        </div>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color">No. of horses running in each race (after
+                                scratchings)</p>
+                        </div>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color">No. of horses running in each race (after
+                                scratchings)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="col-sm-12 col-lg-4 mb-4 d-flex">
+                <div class="card border rounded-4 p-3 d-flex flex-column">
+                    <div class="card-body d-flex flex-column flex-grow-1 gap-4">
+                        <h5 class="card-title subtitle mb-0">Smart features</h5>
+                        <p class="card-text fw-medium matrix-color">
+                            Mark your favourite race and never miss placing your bets. Easily LogIn if your shortlisted
+                            or black booked horse is running for the day.
+                        </p>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color"><span class="arrow-color">Runner count</span> –
+                                ideal for matched bettors to leverage the run 2nd promotion (Betfair liquidity
+                                permitting)</p>
+                        </div>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color"><span class="arrow-color">Race Timing</span> –
+                                place your bets in advance or focus on specific time promotions (such as the 6-7PM all
+                                races, Run 2nd Money back)</p>
+                        </div>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color"><span class="arrow-color">Open races</span> –
+                                where multiple horses have a chance to win and the risk of losing your bet is higher.
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color"><span class="arrow-color">Best Mug races</span>
+                                – where odds-on or close to odds-on favorite(s) dominate, presenting enticing mug
+                                betting opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="col-sm-12 col-lg-4 mb-4 d-flex">
+                <div class="card border rounded-4 p-3 d-flex flex-column">
+                    <div class="card-body d-flex flex-column flex-grow-1 gap-4">
+                        <h5 class="card-title mb-0 subtitle">Race-day insights:</h5>
+                        <p class="card-text mb-3 fw-medium matrix-color">
+                            Get all the vital information in one convenient grid chart. No more tedious LogIning – we
+                            will collect it all for you.
+                        </p>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color">Display only your favorite races for effortless
+                                navigation.</p>
+                        </div>
+                        <div class="d-flex">
+                            <span class="fw-semibold arrow-color">></span>
+                            <p class="mb-0 ms-2 fw-medium matrix-color">Access race results (Top 4) at the end of each
+                                race day.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+<!-- footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-sm-12 col-md-12 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <img src="./assest/image/Logo.png" alt="logo" class="w-50">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none fw-medium body-3 footer-text">Welcome to
+                                BetterBettors.com.au, Australia's first integrated
+                                bet planner, tracker, and assist web app. Designed for all bettors, our platform helps
+                                you optimize strategies and consistently profit. Join us to elevate your betting
+                                game!</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <span class="body-2">Quick Links</span>
+                    <ul class="list-unstyled e d-flex flex-column gap- text-decoration-none">
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Pays</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Modules</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Plans</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Disclaimer</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <span class="body-2">Modules</span>
+                    <ul class="list-unstyled text-decoration-none d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white body-3 text-decoration-none  ">Race Matrix</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie Promo</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Racing Planner</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Promo Mug Ratio</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Race Radar</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class=" col-sm-12 col-md-12 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <div class="d-flex flex-column gap-2">
+                        <span class="body-2">Got questions? Email us anytime!</span>
+                        <ul class="list-unstyled text-decoration-none">
+                            <li><button class="border rounded footer-button">Send an Mail</button></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div>
+                            <h5 class="body-2">Contact Us</h5>
+
+                        </div>
+                        <div class=" d-flex gap-3">
+                            <img src="./assest/image/Instagram.png" alt="logo">
+                            <img src="./assest/image/Icon - X.png" alt="logo">
+                            <img src="./assest/image/Icon - FB.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class=" footer2 ">
+        <div class="container">
+            <span class="fw-medium text-center text-white ">© 2024. Made with passion by BETTERBETTORS. All rights
+                reserved.</span>
+        </div>
+    </div>
+
+    <!-- Helpline -->
+    <!-- <div class="helpline-section container">
+        <div class="spacing">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap flex-md-nowrap align-items-center gap-10">
+                    <div class="sign18 rounded-circle  p-1 ">
+                        <h2 class="text-4">18+</h2>
+                    </div>
+                    <div class="helpline-text d-flex flex-column gap-16">
+                        <h2 class="text-4">WHAT ARE YOU REALLY GAMBLING WITH?</h2>
+                        <p class="text-8">For free and confidential support call
+                            <a href="tel:1800858858" class="a-link fw-bold text-decoration-none">1800 858 858</a> or
+                            visit
+                            <a href="https://www.gamblinghelponline.org.au"
+                                class="a-link fw-bold text-decoration-none">gamblinghelponline.org.au</a>
+                        </p>
+                        <a href="#" class="a-link text-decoration-none text-8">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>

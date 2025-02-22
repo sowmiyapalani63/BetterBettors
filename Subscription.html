@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+ 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#370061;">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#" ><img src="./assest/image/Logo.png" alt="logo" class="w-100"></a>
+
+        <!-- Toggler Button (hidden on large screens) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="color: white;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end  "style="background-color:#370061;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel" ><img src="./assest/image/Logo.png" alt="logo" class="w-100"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="background-color: #370061;">
+                <!-- Center the navbar items -->
+                <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white text-7 fw-medium" aria-current="page" href="#" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-7 fw-medium" href="#" >Pays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-7 fw-medium" href="#" >Modules</a>
+                    </li>  <li class="nav-item">
+                        <a class="nav-link text-white text-7 fw-medium" href="#" >Subscribe</a>
+                    </li>
+                    
+                </ul>
+
+                <!-- LogIn form aligned properly -->
+                <form class="d-flex align-items-center justify-content-center navbar-gap">
+                    <button class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap" type="submit">Log In</button>
+                    <button class="btn bg-white  text-7 fw-medium" style="color: #370061;" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- subscription  -->
+    <section>
+        <div class="container text-center py-5">
+            <h2 class="fw-bold">Choose your plan</h2>
+            <p class="text-secondary fs-5">Unlock endless possibilities</p>
+    
+            <div class="row justify-content-center g-4 mt-4 subplan">
+    
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card d-flex flex-column" style="gap: 34px;">
+                        <h4 class="text-start">BetterBettors Basic</h4>
+                        <div class="d-flex">
+                            <p class="fw-medium text-dark"
+                                style="font-family: Montserrat; font-size: 40px; line-height: 48px; letter-spacing: 0%;">$0
+                            </p>
+                            <span class="d-flex align-items-center"
+                                style="font-family: Montserrat; font-size: 14px; line-height: 21px; letter-spacing: 0%; color: #545454;">per
+                                month AUD</span>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn w-100 text-white "
+                                style="background-color: #4a148c;padding : 16px;">Request Now</button>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <ul class="list-unstyled d-flex flex-column" style="color: #545454; gap : 24px;">
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">14-day trial completely free</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Punters' point-of-view</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Personalized bookie promo list</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Smart Racing Bet Planner</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Integrated pay-out calculations</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Bet logbook</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Tracks promo to mug ratio</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Race Radar</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Race results updates</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Graphical Profit/Loss Analytics</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Bet-life balance</p>
+                                </li>
+                                <li class="d-flex align-items-center" style="gap: 10px;">
+                                    <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                    <p style="margin: 0%;">Full customer support</p>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+    
+    
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-1 " style="background-color: #7200CB; border-radius : 12px">
+                        <p class="text-center fw-medium"
+                            style="font-family: Montserrat; font-size: 18px; line-height: 27px; letter-spacing: 0%; color : #FFFFFF; margin : 0px; padding : 20px">
+                            Best Deal</p>
+                        <div class="p-4 d-flex flex-column"
+                            style="background-color: #FFFFFF; border-radius : 8px; gap : 31px;">
+                            <h4 class="text-start">BetterBettors Basic</h4>
+                            <div class="d-flex">
+                                <p class="fw-medium text-dark"
+                                    style="font-family: Montserrat; font-size: 40px; line-height: 48px; letter-spacing: 0%;">
+                                    $49 </p>
+                                <span class="d-flex align-items-center"
+                                    style="font-family: Montserrat; font-size: 14px; line-height: 21px; letter-spacing: 0%; color: #545454;">per
+                                    month AUD</span>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn w-100 text-white "
+                                    style="background-color: #4a148c;padding : 16px;">Subcribe Now</button>
+                            </div>
+                            <div>
+                                <ul class="list-unstyled d-flex flex-column " style="color: #545454;gap : 20px;">
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p class="text-start" style="margin: 0%;">Punters' point-of-view (Grid view of
+                                            AUS/NZ races)</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p class="text-start" style="margin: 0%;">Personalized bookie promo list (supports
+                                            all bookies)</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Smart Racing Bet Planner</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Integrated pay-out calculations</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Bet logbook</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Tracks promo to mug ratio</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Race Radar</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Race results updates</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Graphical Profit/Loss Analytics</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Bet-life balance</p>
+                                    </li>
+                                    <li class="d-flex align-items-center" style="gap: 10px;">
+                                        <img style="width: 14px; height: 10px;" src="./image/tick.png" alt="">
+                                        <p style="margin: 0%;">Full customer support</p>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!-- footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Column 1 -->
+            <div class="col-sm-12 col-md-12 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                <img src="./assest/image/Logo.png" alt="logo" class="w-50">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none fw-medium body-3 footer-text">Welcome to
+                            BetterBettors.com.au, Australia's first integrated
+                            bet planner, tracker, and assist web app. Designed for all bettors, our platform helps
+                            you optimize strategies and consistently profit. Join us to elevate your betting
+                            game!</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                <span class="body-2">Quick Links</span>
+                <ul class="list-unstyled e d-flex flex-column gap- text-decoration-none">
+                    <li><a href="#" class="text-white body-3 text-decoration-none">Pays</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">Modules</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">Plans</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">Disclaimer</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                <span class="body-2">Modules</span>
+                <ul class="list-unstyled text-decoration-none d-flex flex-column gap-2">
+                    <li><a href="#" class="text-white body-3 text-decoration-none  ">Race Matrix</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie Promo</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">Racing Planner</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">Promo Mug Ratio</a></li>
+                    <li><a href="#" class="text-white body-3 text-decoration-none">Race Radar</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class=" col-sm-12 col-md-12 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                <div class="d-flex flex-column gap-2">
+                    <span class="body-2">Got questions? Email us anytime!</span>
+                    <ul class="list-unstyled text-decoration-none">
+                        <li><button class="border rounded footer-button">Send an Mail</button></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <div>
+                        <h5 class="body-2">Contact Us</h5>
+
+                    </div>
+                    <div class=" d-flex gap-3">
+                        <img src="./assest/image/Instagram.png" alt="logo">
+                        <img src="./assest/image/Icon - X.png" alt="logo">
+                        <img src="./assest/image/Icon - FB.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<div class=" footer2 ">
+    <div class="container">
+        <span class="fw-medium text-center text-white ">© 2024. Made with passion by BETTERBETTORS. All rights
+            reserved.</span>
+    </div>
+</div>
+
+
+</body>
+
+</html>

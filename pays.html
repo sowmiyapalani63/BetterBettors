@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BettorBetters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#370061;">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#" ><img src="./assest/image/Logo.png" alt="logo" class="w-100"></a>
+    
+            <!-- Toggler Button (hidden on large screens) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="offcanvas offcanvas-end  "style="background-color:#370061;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel" ><img src="./assest/image/Logo.png" alt="logo" class="w-100"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: #370061;">
+                    <!-- Center the navbar items -->
+                    <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white text-7 fw-medium" aria-current="page" href="#" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-7 fw-medium" href="#" >Pays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-7 fw-medium" href="#" >Modules</a>
+                        </li>  <li class="nav-item">
+                            <a class="nav-link text-white text-7 fw-medium" href="#" >Subscribe</a>
+                        </li>
+                        
+                    </ul>
+    
+                    <!-- LogIn form aligned properly -->
+                    <form class="d-flex align-items-center justify-content-center navbar-gap">
+                        <button class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap" type="submit">Log In</button>
+                        <button class="btn bg-white  text-7 fw-medium" style="color: #370061;" type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- about us -->
+    <section class="betting-section ">
+        <div class="d-flex flex-column-reverse flex-sm-column spacing-sm-40 spacing-100">
+            <div class="container ">
+                <div class="home-intro padding-top">
+                    <h1 class="text-1">Australians at the Races: Where Passion Meets Financial Pressure</h1>
+                    <p class="subtitle fw-medium color-secondary">16% of Australians reported an increase in gambling
+                        post-COVID-19. Explore how BetterBettors helps you turn losses into wins.</p>
+                    <a href="#" class="subscribe-btn text-3">Start Planning Your Bets</a>
+
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <!-- First Image (Hidden on Small Screens) -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center d-none d-md-flex">
+                        <img src="./assest/image/horse10.png" alt="Horse 1" class="img-fluid rounded custom-img" />
+                    </div>
+
+                    <!-- Second Image (Visible on All Screens, Adjusted for Small Screens) -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="./assest/image/horse11.png" alt="Horse 2"
+                            class="img-fluid rounded shadow-lg custom-img-large" />
+                    </div>
+
+                    <!-- Third Image (Hidden on Small Screens) -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center d-none d-md-flex">
+                        <img src="./assest/image/horse12.png" alt="Horse 3" class="img-fluid rounded custom-img" />
+                    </div>
+
+                    <!-- <div class=" row d-flex flex-row align-items-center justify-content-center flex-xl-nowrap">
+                    <div class="col-12 col-md-4"><img src="/assest/image/horse6.png" alt="scale1" class="w-full h-full"/></div>
+                    <div class="col-12 col-md-4"><img src="/assest/image/horse7.png" alt="scale1"/></div>
+                    <div class=" col-12 col-md-4"><img src="/assest/image/horse8.png" alt="scale1"/></div>
+                </div> -->
+                </div>
+
+            </div>
+    </section>
+
+    <!-- scale of lose  -->
+    <section class="container">
+        <div class="spacing-60 spacing ">
+            <div class="margin-title text-center">
+                <h2 class="text-4 fw-semibold text-center">The Scale of Loses</h2>
+
+            </div>
+            <div
+                class="row d-flex   flex-wrap flex-col flex-md-row gap40 align-items-center flex-xl-nowrap gap-40 justify-content-center">
+                <div class="col-12 col-xl-6">
+                    <div class="d-flex flex-row align-items-center bg-secondary rounded-3 p28 gap-4">
+                        <div class="">
+                            <img class="scale" src="./assest/image/scaleDecrease.png" alt="Union">
+                        </div>
+                        <div class="d-flex flex-column  gap-10  color-secondary">
+                            <p class="body-1 fw-medium">Annual gambling losses</p>
+                            <p class="body-3 fw-medium">Annual gambling losses: A staggering $24.9 billion was lost
+                                gambling in Australia in
+                                2020-21.
+                                (Source:
+                                <a href="https://aifs.gov.au/reLogIn_programs/australian-gambling-reLogIn-centre"
+                                    class="a-link text-decoration-none">AIGR</a> )
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="d-flex flex-row  align-items-center bg-secondary rounded-3 p28 gap-4">
+                        <div class=" ">
+                            <img class="scale" src="./assest/image/scaleIncrease.png" alt="Union">
+                        </div>
+                        <div class="d-flex flex-column  gap-10 color-secondary">
+                            <p class="body-1 fw-medium">Horse racing’s share</p>
+                            <p class="body-3 fw-medium">$13.4 billion was wagered on thoroughbred racing in the 2021-22
+                                season. (Source:
+                                <a href="https://www.racingaustralia.horse/Aboutus/AnnualReport.aspx"
+                                    class="a-link text-decoration-none">ARB</a> )
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="d-flex   flex-wrap flex-col flex-md-row gap40 align-items-center flex-xl-nowrap gap-40 ">
+                    <div class="d-flex flex-row align-items-center bg-secondary rounded-3 p28 gap-4">
+                        <div class="">
+                            <img class="scale" src="/assest/image/scaleDecrease.png" alt="Union">
+                        </div>
+                        <div class="d-flex flex-column  gap-10  color-secondary">
+                            <p class="body-1 fw-medium">Annual gambling losses</p>
+                            <p>Annual gambling losses: A staggering $24.9 billion was lost gambling in Australia in
+                                2020-21.
+                                (Source:
+                                <a href="https://aifs.gov.au/reLogIn_programs/australian-gambling-reLogIn-centre"
+                                    class="a-link text-decoration-none">AIGR</a> )
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-row  align-items-center bg-secondary rounded-3 p28 gap-4">
+                        <div class=" ">
+                            <img class="scale" src="/assest/image/scaleIncrease.png" alt="Union">
+                        </div>
+                        <div class="d-flex flex-column  gap-10 color-secondary">
+                            <p class="body-1 fw-medium">Horse racing’s share</p>
+                            <p>$13.4 billion was wagered on thoroughbred racing in the 2021-22 season. (Source:
+                                <a href="https://www.racingaustralia.horse/Aboutus/AnnualReport.aspx"
+                                    class="a-link text-decoration-none">ARB</a> )
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div> -->
+            </div>
+    </section>
+    <!-- Recent Concerns -->
+    <section class="container">
+        <div class="spacing-60 spacing ">
+            <div class="margin-title text-center">
+                <h2 class="text-4 fw-semibold text-center">Recent Concerns</h2>
+
+            </div>
+            <div
+                class="row d-flex   flex-wrap flex-col flex-md-row gap40 align-items-center flex-xl-nowrap gap-40 justify-content-center ">
+                <div class="col-12 col-xl-6 bg-secondary  p28 gap-4">
+                    <div class="d-flex flex-column  gap-10  color-secondary">
+                        <p class="body-1 fw-medium">Increased online gambling</p>
+                        <p class="body-3 fw-medium">The rapid growth of online gambling raises concerns about potential
+                            losses,
+                            with online gamblers 3-4 times more likely to experience problems compared to in-person
+                            gambling. (Source: Deakin University)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 bg-secondary  p28 gap-4">
+                    <div class="d-flex flex-column  gap-10 color-secondary">
+                        <p class="body-1 fw-medium">Targeting vulnerable groups</p>
+                        <p class="body-3 fw-medium">Marketing campaigns often target younger demographics and vulnerable
+                            communities, raising ethical concerns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Turning the Tide section   -->
+    <section class="container">
+        <div class="spacing-100 spacing ">
+            <div class="tide d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-4 fw-semibold text-center">Turning the Tide with BetterBettors</h2>
+                <p class="body-2 fw-medium color-p text-center">Take a look at the unique modules offered by <span
+                        class="a-link">BetterBettors</span>, designed to assist punters in addressing Australia’s
+                    concerning gambling losses. These modules guide punters towards success, turning <span
+                        class="a-link">losses into wins.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is the PAYS Cycle -->
+    <section class="container">
+        <div class="spacing-60 spacing">
+            <div class="row d-flex flex-column flex-md-row flex-wrap flex-xl-nowrap align-items-stretch justify-content-center gap40">
+                <div class="col-12 col-xl-3 d-flex" >
+                    <div class="d-flex flex-row  rounded p-3 w-100 h-100">
+                        <div class="">
+                            <p class="text-white p-4 bg-purple rounded-3"> 1</p>
+                        </div>
+                        <div class="d-flex flex-column pe-4 ps-4 pb-4 gap-10 ">
+                            <p class="body-1 fw-medium a-link">Targeting vulnerable groups</p>
+                            <p class="body-3 fw-medium c olor-secondary">Marketing campaigns often target younger
+                                demographics and vulnerable communities, raising ethical concerns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex" >
+                    <div class="d-flex flex-row  rounded p-3 w-100 h-100">
+                        <div class="">
+                            <p class="text-white p-4 bg-purple rounded-3">2</p>
+                        </div>
+                        <div class="d-flex flex-column pe-4 ps-4 pb-4 gap-10 ">
+                            <p class="body-1 fw-medium a-link">Action</p>
+                            <p class="body-3 fw-medium c olor-secondary">Log your bets, choose stake and race, and support
+                                all bet types with real or bonus cash.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex" >
+                    <div class="d-flex flex-row  rounded p-3 w-100 h-100">
+                        <div class="">
+                            <p class="text-white p-4 bg-purple rounded-3">3</p>
+                        </div>
+                        <div class="d-flex flex-column pe-4 ps-4 pb-4 gap-10 ">
+                            <p class="body-1 fw-medium a-link">Yield</p>
+                            <p class="body-3 fw-medium c olor-secondary">Track daily, weekly, or yearly profit/loss with
+                                detailed reports and insights into your betting performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex"  >
+                    <div class="d-flex flex-row  rounded p-3 w-100 h-100">
+                        <div class="">
+                            <p class="text-white p-4 bg-purple rounded-3">4</p>
+                        </div>
+                        <div class="d-flex flex-column pe-4 ps-4 pb-4 gap-10 ">
+                            <p class="body-1 fw-medium a-link">Surpass</p>
+                            <p class="body-3 fw-medium c olor-secondary">Visualize results, adjust betting strategies, and
+                                test new patterns to consistently improve your outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="container">
+        <div class="spacing-100 spacing ">
+            <div class="row d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-center">
+                <div class="col-12 col-md-4 d-flex flex-row w-100 h-100" style="max-width: 270px;">
+                    <div class="">
+                        <p class="text-white p-4 bg-purple rounded-3"> 1</p>
+                    </div>
+                    <div class="d-flex flex-column p-3 gap-10 ">
+                        <p class="body-1 fw-medium a-link">Targeting vulnerable groups</p>
+                        <p class="body-3 fw-medium c olor-secondary">Marketing campaigns often target younger
+                            demographics and vulnerable communities, raising ethical concerns.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-row" style="max-width: 270px;">
+                    <div class="">
+                        <p class="text-white p-4 bg-purple rounded-3">2</p>
+                    </div>
+                    <div class="d-flex flex-column p-3 gap-10 ">
+                        <p class="body-1 fw-medium a-link">Action</p>
+                        <p class="body-3 fw-medium c olor-secondary">Log your bets, choose stake and race, and support
+                            all bet types with real or bonus cash.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-row" style="max-width: 270px;">
+                    <div class="">
+                        <p class="text-white p-4 bg-purple rounded-3">3</p>
+                    </div>
+                    <div class="d-flex flex-column p-3 gap-10 ">
+                        <p class="body-1 fw-medium a-link">Yield</p>
+                        <p class="body-3 fw-medium c olor-secondary">Track daily, weekly, or yearly profit/loss with
+                            detailed reports and insights into your betting performance.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-row" style="max-width: 270px;">
+                    <div class="">
+                        <p class="text-white p-4 bg-purple rounded-3">4</p>
+                    </div>
+                    <div class="d-flex flex-column p-3 gap-10 ">
+                        <p class="body-1 fw-medium a-link">Surpass</p>
+                        <p class="body-3 fw-medium c olor-secondary">Visualize results, adjust betting strategies, and
+                            test new patterns to consistently improve your outcomes.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!-- Faq section -->
+    <section class="container">
+        <div class="spacing-60 spacing ">
+            <div class="margin-title text-center">
+                <h2 class="text-4 fw-semibold text-center">Key Features of BetterBettors</h2>
+
+            </div>
+            <div class="row d-flex flex-column  flex-md-row align-items-center ">
+                <div class="col-12 col-xl-6 accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-8">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                Bet Planner
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse text-7" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Description about BetterBettors.com.au.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-8">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                Tracking Tools
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse text-7 " data-bs-parent="#faqAccordion">
+                            <div class="accordion-body ">
+                                Track all your bets, calculate payouts, and adjust your strategy based on real-time race
+                                results.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                Profit/Loss Analytics
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse text-7" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">No, BetterBettors is an independent platform.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                Race Result Updates
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse text-7" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">It uses advanced tracking algorithms to monitor and analyze your
+                                bets.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                Bet-Life Balance
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse text-7" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">It uses advanced tracking algorithms to monitor and analyze your
+                                bets.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 bg-ECECEC">
+                    <img src="./assest/image/desktop.png" class="img-fluid" alt="Desktop">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Claim Your Edge with BetterBettors -->
+    <section class="container">
+        <div class="spacing-100 spacing ">
+            <div class="tide d-flex flex-column align-items-center justify-content-center gap-5">
+                <h2 class="text-4 fw-semibold text-center">Claim Your Edge with BetterBettors</h2>
+                <p class="body-2 fw-medium color-p text-center">With BetterBettors.com.au, you’re not just
+                    betting—you’re investing in strategies that pay off. Join the community where winning is not just
+                    possible, it’s planned.</p>
+                <p class="body-2 fw-medium color-p text-center">Don’t let the house always win. Claim your edge,<span
+                        class="a-link">transform your luck ,</span>and <span class="a-link">start betting smarter</span>
+                    today</p>
+                <a href="#" class="subscribe-btn text-3">Subscribe Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-sm-12 col-md-12 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <img src="./assest/image/Logo.png" alt="logo" class="w-50">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none fw-medium body-3 footer-text">Welcome to
+                                BetterBettors.com.au, Australia's first integrated
+                                bet planner, tracker, and assist web app. Designed for all bettors, our platform helps
+                                you optimize strategies and consistently profit. Join us to elevate your betting
+                                game!</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <span class="body-2">Quick Links</span>
+                    <ul class="list-unstyled e d-flex flex-column gap- text-decoration-none">
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Pays</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Modules</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Plans</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Disclaimer</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <span class="body-2">Modules</span>
+                    <ul class="list-unstyled text-decoration-none d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white body-3 text-decoration-none  ">Race Matrix</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie Promo</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Racing Planner</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Promo Mug Ratio</a></li>
+                        <li><a href="#" class="text-white body-3 text-decoration-none">Race Radar</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class=" col-sm-12 col-md-12 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
+                    <div class="d-flex flex-column gap-2">
+                        <span class="body-2">Got questions? Email us anytime!</span>
+                        <ul class="list-unstyled text-decoration-none">
+                            <li><button class="border rounded footer-button">Send an Mail</button></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div>
+                            <h5 class="body-2">Contact Us</h5>
+
+                        </div>
+                        <div class=" d-flex gap-3">
+                            <img src="./assest/image/Instagram.png" alt="logo">
+                            <img src="./assest/image/Icon - X.png" alt="logo">
+                            <img src="./assest/image/Icon - FB.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class=" footer2 ">
+        <div class="container">
+            <span class="fw-medium text-center text-white ">© 2024. Made with passion by BETTERBETTORS. All rights
+                reserved.</span>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+</html>
