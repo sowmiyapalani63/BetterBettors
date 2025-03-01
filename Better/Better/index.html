@@ -22,159 +22,144 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#370061;">
-        <div class="container">
-            <a class="navbar-brand text-white" href="#"><img src="./assest/image/Logo.png" alt="logo" class="w-100"></a>
-
-            <!-- Toggler Button (hidden on large screens) -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"
-                style="color: white;">
+    <nav class="navbar navbar-expand-lg bg-purple navbar">
+        <div class="container nav-padding">
+            <img src="./assest/image/Logo.png" alt="User">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="offcanvas offcanvas-end" style="background-color:#370061;" tabindex="-1"
-                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel"><img
-                            src="./assest/image/Logo.png" alt="logo" class="w-100"></h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" style="background-color: #370061;">
-                    <!-- Center the navbar items -->
-                    <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white text-7 fw-medium" aria-current="page"
-                                href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-7 fw-medium" href="./pays.html">Pays</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <!-- Dropdown Link -->
-                            <a class="nav-link text-white text-7 fw-medium dropdown-toggle" href="#" id="navbarDropdown"
-                                role="button" aria-expanded="false" data-bs-toggle="dropdown" aria-haspopup="true">
-                                Modules
-                            </a>
-                            <!-- Dropdown Menu -->
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
-                                style="background-color:#f8f9fa;">
-                                <li><a class="dropdown-item text-7 fw-medium" href="./my-bed-log-book.html">My Bet Log
-                                        Book</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="#">My Bookie Promo</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="#">My Bookies</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./promo-mug-ratio.html">Promo Mug
-                                        Ratio</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./race-radar.html">Race Radar</a>
-                                </li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./Race-matrix.html">Race Matrix</a>
-                                </li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="#">Race Planner</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-7 fw-medium" href="#">Subscribe</a>
-                        </li>
-                    </ul>
-
-                    <!-- LogIn form aligned properly -->
-                    <div class="d-flex navbar-gap">
-                        <a href="./Login.html"
-                            class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap"
-                            data-bs-toggle="modal" data-bs-target="#loginModal">
-                            Log In
-                        </a>
-                        <a href="./Register.html" class="btn bg-white text-7 fw-medium" style="color: #370061;"
-                            type="submit">
-                            Register
-                        </a>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2">
+                    <li class="nav-item">
+                        <a class="nav-link active font-weight-medium body-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link body-3 font-weight-medium" href="#">Pays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled body-3 font-weight-medium" aria-disabled="true">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled body-3 font-weight-medium" aria-disabled="true">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex gap-2 pb-2" role="search">
+                    <button class="btn btn-outline-light" type="submit">Log In</button>
+                    <button class="btn btn-outline-light text-gray" type="submit">Register</button>
+                </form>
             </div>
         </div>
     </nav>
 
 
-
     <!-- about us -->
-    <section class="betting-section">
-        <div class="d-flex flex-column-reverse flex-sm-column spacing-sm-40 spacing-100">
-            <div class="container ">
-                <div class="home-intro padding-top">
-                    <h1 class="text-1">Transform Your Betting Strategy, Track Your Success</h1>
-                    <p class="text-2">Bet smarter with our integrated planner, tracker, and Race Radar. Our tools help
-                        you
+    <!-- <section class="container text-center">
+        <div class="spacing-60">
+            <div class="align-items-center justify-content-center d-flex flex-column">
+                <div>
+                    <h1 class="display-2">Transform Your Betting Strategy, Track Your Success</h1>
+                    <p class="color-p Subtittle fw-medium">Bet smarter with our integrated planner, tracker, and Race Radar. Our tools help you
                         stay ahead and win consistently.</p>
-                    <a href="#" class="subscribe-btn text-3">Subscribe Now</a>
-                    <div class="bettors text-2 d-flex flex-md-row flex-column ">
-                        <span>Join with our 100+</span>
-                        <div>
-                            <img src="./assest/image/avatar1.jpg" alt="User">
-                            <img src="./assest/image/avatar2.jpg" alt="User" class="ml12">
-                            <img src="./assest/image/avatar3.jpg" alt="User" class="ml12">
-                            <img src="./assest/image/avatar4.jpg" alt="User" class="ml12">
-                        </div>
-
-                        <div class="d-none d-md-flex flex-column align-items-center">
-                            <span>Successful Bettors 🎊</span>
-                            <img src="./assest/image/Underline.svg" alt="User" class="w-100 h-auto">
-                        </div>
-
-
-                    </div>
+                    <a href="#" class="subscribe-btn fw-medium ">Subscribe Now</a>
                 </div>
-            </div>
-
-
-            <div class="custom-container spacing-sm-20">
-
-                <div id="carouselSingleItem" class="carousel slide d-md-none rounded-3" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assest/image/horse1.png" class="d-block w-100" alt="Horse Race 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assest/image/horse2.png" class="d-block w-100" alt="Horse Race 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assest/image/horse3.jpg" class="d-block w-100" alt="Horse Race 3">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="carouselMultiItem" class="carousel-container slide d-none d-md-block">
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><img src="./assest/image/horse1.png" alt="Horse 1"></div>
-                        <div class="carousel-slide"><img src="./assest/image/horse2.png" alt="Horse 2"></div>
-                        <div class="carousel-slide"><img src="./assest/image/horse3.jpg" alt="Horse 3"></div>
-                        <div class="carousel-slide"><img src="./assest/image/horse1.png" alt="Horse 1"></div>
-                        <div class="carousel-slide"><img src="./assest/image/horse2.png" alt="Horse 2"></div>
-                        <div class="carousel-slide"><img src="./assest/image/horse3.jpg" alt="Horse 3"></div>
-                    </div>
-                </div>
-
-            </div>
+            
+        </div>
+        
 
         </div>
+     </section> -->
+    <section class="betting-section">
+        <div class="container">
+            <div class="home-intro">
+                <h1 class="text-1">Transform Your Betting Strategy, Track Your Success</h1>
+                <p class="text-2">Bet smarter with our integrated planner, tracker, and Race Radar. Our tools help you
+                    stay ahead and win consistently.</p>
+                <a href="#" class="subscribe-btn text-3">Subscribe Now</a>
+                <div class="bettors text-2 d-flex flex-md-row flex-column ">
+                    <span>Join with our 100+</span>
+                    <div>
+                        <img src="/Better/assest/image/avatar1.jpg" alt="User">
+                        <img src="/Better/assest/image/avatar2.jpg" alt="User">
+                        <img src="/Better/assest/image/avatar3.jpg" alt="User">
+                        <img src="/Better/assest/image/avatar4.jpg" alt="User">
+                    </div>
+
+                    <div class="d-none d-md-flex flex-column align-items-center">
+                        <span>Successful Bettors 🎊</span>
+                        <img src="/Better/assest/image/Underline.svg" alt="User" class="w-100 h-auto">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="horseCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="/Better/assest/image/horse1.png" class="w-100" alt="Horse Race 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/Better/assest/image/horse2.png" class="w-100" alt="Horse Race 2">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/Better/assest/image/horse3.jpg" class="w-100" alt="Horse Race 3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="/Better/assest/image/horse1.png" class="w-100" alt="Horse Race 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/Better/assest/image/horse2.png" class="w-100" alt="Horse Race 2">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/Better/assest/image/horse3.jpg" class="w-100" alt="Horse Race 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#horseCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#horseCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+
     </section>
 
 
     <!-- Why Choose BetterBettor -->
     <section class="why-choose-section text-center container">
-        <div class="spacing-60 spacing ">
+        <div class="spacing-60">
             <div class="margin-title">
                 <h2 class="text-4 fw-semibold text-center">Why Choose BetterBettors?</h2>
             </div>
             <div
-                class="d-flex gap-40 flex-wrap flex-col flex-md-row justify-content-center justify-content-xl-between align-items-center flex-lg-nowrap">
+                class="d-flex gap-40 flex-wrap flex-col flex-md-row justify-content-between align-items-center flex-lg-nowrap">
                 <div class="why-choose-card">
                     <div class="card-content">
                         <h3 class="text-5 text-2-sm fw-medium">Optimize Your<br /> Betting Strategy</h3>
                     </div>
                     <div class="ml40 ml-sm-0 overflow-hidden">
-                        <img class="" src="./assest/image/Rectangle.png" alt="Optimize Your Betting Strategy">
+                        <img class="" src="/Better/assest/image/Rectangle.png" alt="Optimize Your Betting Strategy">
                     </div>
                 </div>
                 <div class="why-choose-card mb-129">
@@ -182,7 +167,7 @@
                         <h3 class="text-5 text-2-sm fw-medium">Comprehensive <br /> Tracking & Insights</h3>
                     </div>
                     <div class="ml40 ml-sm-0 overflow-hidden">
-                        <img class="" src="./assest/image/Rectangle2.png" alt="Optimize Your Betting Strategy">
+                        <img class="" src="/Better/assest/image/Rectangle2.png" alt="Optimize Your Betting Strategy">
                     </div>
                 </div>
                 <div class="why-choose-card">
@@ -190,7 +175,7 @@
                         <h3 class="text-5 text-2-smfw-medium">All-in-One<br /> Solution</h3>
                     </div>
                     <div class="ml40 ml-sm-0 overflow-hidden">
-                        <img class="" src="./assest/image/Rectangle3.png" alt="Optimize Your Betting Strategy">
+                        <img class="" src="/Better/assest/image/Rectangle3.png" alt="Optimize Your Betting Strategy">
                     </div>
                 </div>
             </div>
@@ -202,11 +187,11 @@
 
     <!--Advantage  -->
     <section class="container">
-        <div class="spacing-100 spacing ">
+        <div class="spacing-100">
             <div
-                class="d-flex advantage-card-row  flex-wrap flex-col flex-md-row justify-content-center justify-content-xl-between align-items-center flex-xl-nowrap gap-40">
+                class="d-flex   flex-wrap flex-col flex-md-row justify-content-between align-items-center flex-xl-nowrap gap-40">
                 <div class="d-flex flex-row align-items-center advantage-card rounded-3">
-                    <div class="p10 bg-purple rounded-start-3">
+                    <div class="p10 bg-purple">
                         <img class="union " src="./assest/image/vector.svg" alt="Union">
                     </div>
                     <div class="body-1 fw-medium p16 color-secondary">
@@ -215,7 +200,7 @@
 
                 </div>
                 <div class="d-flex flex-row  align-items-center advantage-card rounded-3">
-                    <div class="p10 bg-purple rounded-start-3">
+                    <div class="p10 bg-purple">
                         <img class="union " src="./assest/image/Vector2.svg" alt="Union">
                     </div>
                     <div class="body-1 fw-medium p16 color-secondary">
@@ -224,7 +209,7 @@
 
                 </div>
                 <div class="d-flex flex-row align-items-center advantage-card rounded-3">
-                    <div class="p10 bg-purple rounded-start-3">
+                    <div class="p10 bg-purple">
                         <img class="union " src="./assest/image/Vector3.svg" alt="Union">
                     </div>
                     <div class="body-1 fw-medium p16 color-secondary">
@@ -251,10 +236,10 @@
                 <div class="col-md-6">
                     <div
                         class="spacing20 border rounded-24  d-flex flex-column flex-lg-row justify-content-between gap-5">
-
+                        <!-- <div class="max-sm-h-160"> -->
                         <img class="img-fluid object-fit-contain" src="./assest/image/horse4.png"
                             alt="Integrated Bet Planner" />
-
+                        <!-- </div> -->
 
                         <div>
                             <h3 class="subtitle fw-semibold">Integrated Bet Planner</h3>
@@ -287,10 +272,10 @@
                 <div class="col-md-6">
                     <div
                         class="spacing20 border rounded-24  d-flex flex-column flex-lg-row justify-content-between gap-5">
-
+                        <!-- <div class="max-sm-h-160"> -->
                         <img class="img-fluid object-fit-contain" src="./assest/image/horse6.png"
                             alt="Integrated Bet Planner" />
-
+                        <!-- </div> -->
 
                         <div>
                             <h3 class="subtitle fw-semibold">Real-Time Odds Comparison</h3>
@@ -305,10 +290,10 @@
                 <div class="col-md-6">
                     <div
                         class="spacing20 border rounded-24  d-flex flex-column flex-lg-row justify-content-between gap-5">
-
+                        <!-- <div class="max-sm-h-160"> -->
                         <img class="img-fluid object-fit-contain" src="./assest/image/horse7.png"
                             alt="Integrated Bet Planner" />
-
+                        <!-- </div> -->
 
                         <div>
                             <h3 class="subtitle fw-semibold">Advanced Tracking & Reports</h3>
@@ -323,7 +308,7 @@
                 <div class="col-md-6">
                     <div
                         class="spacing20 border rounded-24 d-flex flex-column flex-lg-row justify-content-between gap-5">
-
+                        <!-- <div class="max-sm-h-160"> -->
                         <img class="img-fluid object-fit-contain" src="./assest/image/horse8.png"
                             alt="Integrated Bet Planner" />
                         <!-- </div> -->
@@ -360,8 +345,8 @@
         </div>
         <div class="d-flex justify-content-center pt-3">
             <button
-                class="load-more-btn text-white d-flex align-items-center justify-content-center rounded-3 py-2 px-4 fw-normal gap-1">
-                <span>Load More</span> <img src="./assest/image/load-more-arrow.svg" alt="load-more" />
+                class="load-more-btn text-white d-flex align-items-center justify-content-center rounded-3 py-2 px-4 fw-normal ">
+                <span>Load More</span> <i class="bi bi-info-circle"></i>
             </button>
         </div>
 
@@ -370,7 +355,7 @@
 
     <!-- Faq section -->
     <section class="container">
-        <div class="spacing-60 spacing ">
+        <div class="spacing-60">
             <div class="margin-title text-center">
                 <h2 class="text-4 fw-semibold text-center">Frequently Asked Questions</h2>
                 <p class="body-1 fw-medium color-p body-2">
@@ -444,7 +429,7 @@
     </section>
     <!-- Helpline -->
     <section class="container">
-        <div class="spacing-60 spacing ">
+        <div class="spacing-60">
             <div class="row">
                 <div class="col-12 d-flex flex-wrap flex-md-nowrap align-items-center gap-10">
                     <div class="sign18 rounded-circle ">
@@ -470,7 +455,7 @@
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
-                <!-- Column 1 -->
+                                <!-- Column 1 -->
                 <div class="col-sm-12 col-md-12 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
                     <img src="./assest/image/Logo.png" alt="logo" class="w-50">
                     <ul class="list-unstyled">
@@ -486,11 +471,11 @@
                 <!-- Column 2 -->
                 <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
                     <span class="body-2">Quick Links</span>
-                    <ul class="list-unstyled e d-flex flex-column gap- text-decoration-none">
-                        <li><a href="./pays.html" class="text-white body-3 text-decoration-none">Pays</a></li>
-                        <li><a href="./Race-matrix.html" class="text-white body-3 text-decoration-none">Modules</a></li>
-                        <li><a href="#" class="text-white body-3 text-decoration-none">Plans</a></li>
-                        <li><a href="#" class="text-white body-3 text-decoration-none">Disclaimer</a></li>
+                    <ul class="list-unstyled text-decoration-none d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white body-3">Pays</a></li>
+                        <li><a href="#" class="text-white body-3">Modules</a></li>
+                        <li><a href="#" class="text-white body-3">Plans</a></li>
+                        <li><a href="#" class="text-white body-3">Disclaimer</a></li>
 
                     </ul>
                 </div>
@@ -499,12 +484,12 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex flex-column footer-headding-gap py-1">
                     <span class="body-2">Modules</span>
                     <ul class="list-unstyled text-decoration-none d-flex flex-column gap-2">
-                        <li><a href="#" class="text-white body-3 text-decoration-none  ">Race Matrix</a></li>
-                        <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie</a></li>
-                        <li><a href="#" class="text-white body-3 text-decoration-none">My Bookie Promo</a></li>
-                        <li><a href="#" class="text-white body-3 text-decoration-none">Racing Planner</a></li>
-                        <li><a href="#" class="text-white body-3 text-decoration-none">Promo Mug Ratio</a></li>
-                        <li><a href="#" class="text-white body-3 text-decoration-none">Race Radar</a></li>
+                        <li><a href="#" class="text-white body-3">Race Matrix</a></li>
+                        <li><a href="#" class="text-white body-3">My Bookie</a></li>
+                        <li><a href="#" class="text-white body-3">My Bookie Promo</a></li>
+                        <li><a href="#" class="text-white body-3">Racing Planner</a></li>
+                        <li><a href="#" class="text-white body-3">Promo Mug Ratio</a></li>
+                        <li><a href="#" class="text-white body-3">Race Radar</a></li>
 
                     </ul>
                 </div>
@@ -533,145 +518,15 @@
             </div>
         </div>
     </footer>
-    <div class=" footer2 ">
-        <div class="container">
-            <span class="fw-medium text-center text-white ">© 2024. Made with passion by BETTERBETTORS. All rights
-                reserved.</span>
-        </div>
-    </div>
-
-    <!-- loginpopup model -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content rounded-3 p-5 ">
-                <!-- Header with Toggle and Close Button -->
-                <div class="modal-header d-flex justify-content-center align-items-center w-100 border-0">
-                    <div class="d-flex align-items-center gap-2">
-                        <span class="fw-medium text-4">Log In</span>
-                        <label class="switch">
-                            <input type="checkbox" id="toggleSwitch">
-                            <span class="slider round"></span>
-                        </label>
-                        <span class="fw-bold text-4">Register</span>
-                    </div>
-
-                </div>
-                <!-- Floating Close Button -->
-                <button type="button" class="btn-close position-absolute close-sm-btn custom-close-btn "
-                    data-bs-dismiss="modal" aria-label="Close" id=""></button>
-
-                <div class="modal-body text-center">
-                    <div class="tab-content">
-                        <!-- Login Form -->
-                        <div class="tab-pane fade show active" id="loginTab">
-                            <h2 class="title-1">Log In</h2>
-                            <form id="loginForm" class=" text-center ">
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="text-start">
-                                        <label for="username" class="form-label text-4 fw-medium"
-                                            style="color: #0E0E0E;">Username</label>
-                                        <input type="text" id="username" class="form-control custom-input"
-                                            placeholder="Enter your username" required>
-                                    </div>
-
-                                    <div class="text-start">
-                                        <label for="password" class="form-label text-4 fw-medium">Password</label>
-                                        <input type="password" id="password" class="form-control custom-input"
-                                            placeholder="Enter your password" required>
-                                    </div>
-
-                                    <div class="text-end">
-                                        <a href="./forget.html"
-                                            class="text-decoration-none body-4 fw-bold color-brandcolor">Forgot
-                                            password?</a>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex flex-column gap-3 pt-5">
-                                    <button type="submit"
-                                        class="w-100 text-white p-3 rounded bg-brandcolor body-3 fw-semibold ">Log
-                                        In</button>
-
-                                    <p class="body-3 fw-semibold text-start">Don't have an account? <a
-                                            href="./Register.html"
-                                            class="fw-bold color-brandcolor text-decoration-none">Register Now</a></p>
-                                </div>
-
-                            </form>
-                        </div>
-
-                        <!-- Register Form -->
-                        <div class="tab-pane fade" id="registerTab">
-                            <h2 class="text-center title-1  fw-medium">Register</h2>
-                            <p class="text-center  pt-3">Step 1 / 4 - Personal Information</p>
-
-                            <form>
-                                <div class="mb-3 text-start pt-3">
-                                    <label class="form-label form-label text-4 fw-semibold">First Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter your firstname" required>
-                                </div>
-
-                                <div class="mb-3 text-start ">
-                                    <label class="form-label form-label text-4 fw-semibold">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter your Lastname" required>
-                                </div>
-
-                                <div class="mb-3 text-start">
-                                    <label class="form-label form-label text-4 fw-semibold">Date of Birth</label>
-                                    <input type="date" class="form-control" required>
-                                </div>
-
-                                <div class="mb-3 text-start ">
-                                    <label class="form-label form-label text-4 fw-semibold">Phone Number</label>
-                                    <input type="tel" class="form-control" placeholder="Enter your phone number"
-                                        required>
-                                </div>
-
-                                <div class="row pt-4" style=" gap : 10px;">
-                                    <button type="button" class="col-5 btn btn-outline-secondary body-3 fw-semibold "
-                                        style="padding : 16px;">Cancel</button>
-                                    <button type="submit"
-                                        class="col-5  text-white  body-3 fw-semibold bg-brandcolor rounded"
-                                        style=" padding : 16px;">Next</button>
-                                </div>
-                            </form>
-
-                            <p class="mt-3 text-center body-3 fw-semibold">Already have an account? <a
-                                    href="./Login.html" class="text-decoration-none color-brandcolor fw-bold">Log In</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   <div class="p-2">
+    <span class="fw-medium text-center">© 2024. Made with passion by BETTERBETTORS. All rights reserved.</span>
+   </div>
 
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script>
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const track = document.querySelector("#carouselMultiItem .carousel-track");
-            const slides = document.querySelectorAll("#carouselMultiItem .carousel-slide");
-            let index = 0;
-            const slideWidth = slides[0].offsetWidth;
-
-            function moveSlide() {
-                index++;
-                if (index > slides.length - 3) {
-                    index = 0;
-                }
-                track.style.transform = `translateX(-${index * (100 / 3)}%)`;
-            }
-
-            setInterval(moveSlide, 2500);
-        });
-
-    </script>
 
 </body>
 

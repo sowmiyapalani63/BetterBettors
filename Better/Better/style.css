@@ -6,13 +6,6 @@
 
 }
 
-@media (min-width: 1550px) {
-    .custom-container {
-        max-width: 1320px;
-        margin: 0 auto;
-    }
-}
-
 :root {
     --Black: #000000;
     --White: #ffffff;
@@ -39,14 +32,6 @@ body {
     background-color: var(--Primary);
 }
 
-.bg-brandcolor {
-    background-color: #370061;
-}
-
-.color-brandcolor {
-    color: #370061;
-}
-
 .color-secondary {
     color: var(--Text)
 }
@@ -59,18 +44,7 @@ body {
     background: #ECECEC;
 }
 
-.bg-secondary {
-    background: linear-gradient(#FFFFFF, #F5F5F5, #FFFFFF);
-    border: 1px solid transparent;
-    border-image: linear-gradient(#EBEBEB, #FFFFFF, #EBEBEB);
-    border-image-slice: 1;
-
-}
-
 .home-intro {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,10 +53,6 @@ body {
     gap: 40px;
     padding: 50px 20px;
     width: 100%;
-}
-
-.ml12 {
-    margin-left: -12px;
 }
 
 .text-4 {
@@ -116,12 +86,15 @@ body {
 .body-3 {
     font-size: 16px;
     line-height: 150%;
+    text-decoration: none;
 }
 
 .subtitle {
     font-size: 22px;
     line-height: 150%;
 }
+
+
 
 .margin-title {
     margin-bottom: 72px;
@@ -162,18 +135,6 @@ body {
     .spacing-60 {
         padding-top: 40px;
         padding-bottom: 40px;
-    }
-
-    .spacing-sm-20 {
-        padding: 20px;
-    }
-
-    .spacing-sm-40 {
-        padding-top: 40px;
-    }
-
-    .spacing-sm-48 {
-        padding-top: 28px;
     }
 
 }
@@ -236,14 +197,6 @@ body {
     padding: 16px;
 }
 
-.p28 {
-    padding: 28px;
-}
-
-.p40 {
-    padding: 40px;
-}
-
 .rounded-24 {
     border-radius: 24px !important;
 }
@@ -289,44 +242,18 @@ body {
     color: var(--Text-2);
 }
 
-.carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-
-}
-
-.carousel-slide.active {
-    transform: scale(1.2);
-
-}
-
-.carousel-track {
-    display: flex;
-    gap: 40px;
+.carousel-item {
     transition: transform 0.5s ease-in-out;
-    will-change: transform;
 }
 
-.carousel-slide {
-    flex: 0 0 calc(100% / 3);
-    min-width: 33.33%;
-    box-sizing: border-box;
-}
-
-.carousel-slide img {
+.carousel-item img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-@media (max-width: 768px) {
 
-    .carousel-item img {
-        min-height: 250px;
-    }
-}
 
 .why-choose-card {
     background: linear-gradient(to left, #FFFFFF, #F5F5F5, #FFFFFF);
@@ -357,15 +284,10 @@ body {
     color: var(--Text);
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 768px) {
     .advantage-card {
         width: 390px !important;
     }
-
-    .advantage-card-row {
-        gap: 40px;
-    }
-
 
 }
 
@@ -392,12 +314,15 @@ body {
 .accordion-item {
     padding: 28px;
     border: none !important;
+    /* Removes all borders */
     border-bottom: 1px solid #ddd !important;
+    /* Keeps only bottom border */
 }
 
 .accordion-button {
     background-color: transparent !important;
     color: inherit;
+    /* Keeps default text color */
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
@@ -416,6 +341,24 @@ body {
     outline: none !important;
 }
 
+/* 
+.accordion-item {
+    padding: 28px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #7200CB !important;
+    background-color: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    color: #7200CB !important;
+    border: none !important;
+    outline: none !important;
+} */
 
 .sign18 {
     border: 4px solid #FB0000;
@@ -436,6 +379,9 @@ body {
 /* Murali */
 /* ---------- Common CSS ------------- */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .display-1 {
     font-size: 40px;
@@ -473,7 +419,7 @@ body {
 }
 
 .body-3 {
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 150%;
 }
 
@@ -485,38 +431,11 @@ body {
 
 
 /* ----------------Navbar CSS------------------ */
-/* nav */
-
-.navbar-gap {
+.navbar-gap{
     gap: 24px;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-    color: black;
-}
-
-.nav-item.dropdown .dropdown-menu {
-    display: none;
-}
-
-.nav-item.dropdown:hover .nav-link {
-    background-color: #370061;
-}
-
-.navbar-nav .nav-item .nav-link.active {
-    color: yellow !important;
-}
-.navbar-nav .nav-item .nav-link:hover {
-    color:#007bff;
-}
-
-
-
-/* footer */
+/* ---------------------------Footer CSS--------------------------------  */
 .footer-text {
     color: #D1D1D1;
 }
@@ -528,12 +447,12 @@ body {
 .footer-headding-gap {
     gap: 22px;
 }
-
-.footer2 {
+.footer2{
     background-color: #370061;
     padding: 24px;
 }
 
+/* ------------------Modul Race Matrix------------------------- */
 
 
 .text-div {
@@ -552,7 +471,7 @@ body {
 }
 
 .span-text {
-    color: #370061;
+    color: #7200CB;
     font-size: 14px;
     line-height: 21px;
 }
@@ -568,12 +487,11 @@ body {
     font-size: 24px;
 
 }
-
 @media (max-width: 768px) {
     .matrix-head {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 32px; 
         flex-direction: column-reverse;
     }
 }
@@ -587,144 +505,9 @@ body {
     padding: 24px;
 
 }
-
-.arrow-color {
-    color: #7200CB;
+.arrow-color{
+    color:#7200CB;
 }
-
-.matrix-color {
+.matrix-color{
     color: #545454;
-}
-
-
-/* pays */
-.RecentConcernsCard {
-    padding: 28px;
-    border: 1px solid;
-    max-width: 580px;
-    max-height: 173px;
-}
-
-.concerns-card {
-    max-width: 580px;
-}
-
-.tide {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.custom-img {
-    width: 360px;
-    height: 260px;
-    object-fit: cover;
-}
-
-.custom-img-large {
-    width: 360px;
-    height: 360px;
-    object-fit: cover;
-    transform: scale(1.1);
-}
-
-@media (max-width: 576px) {
-    .custom-img-large {
-        width: 320px;
-        height: 320px;
-        transform: none;
-    }
-}
-
-/* subsciption page */
-.pricing-card {
-    border-radius: 12px;
-    padding: 30px;
-    background: #fff;
-    border: 1px solid #BEBEBE;
-    background: linear-gradient(167.31deg, #FFFFFF 0%, #FAFAFA 50%, #FFFFFF 100%);
-}
-
-.subplan {
-    gap: 100px;
-}
-
-@media (max-width: 991px) {
-    .subplan {
-        gap: 0px;
-    }
-}
-
-/* login popup  */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #6a1b9a;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-
-.slider::before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-
-input:checked+.slider {
-    background-color: #6a1b9a;
-}
-
-input:checked+.slider::before {
-    transform: translateX(20px);
-}
-
-.custom-close-btn {
-    position: absolute;
-    top: -24px;
-    right: 0px !important;
-    background: #fff !important;
-    opacity: 1 !important;
-    color: black !important;
-    border-radius: 50% !important;
-    padding: 4px;
-
-
-    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="black"%3E%3Cpath d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E') !important;
-    background-size: 12px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@media (max-width: 576px) {
-    .close-sm-btn {
-        position: static;
-        top: 0;
-        right: 0px;
-        background-color: transparent !important;
-        color: black !important;
-        right: auto;
-        transform: translate(0, 0);
-    }
 }
