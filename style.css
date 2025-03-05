@@ -405,16 +405,6 @@ body {
 
 }
 
-.features-card{
-    border: 1px; 
-    border-radius: 24px;
-    border-image: linear-gradient(96.78deg, #EBEBEB 0%, #FFFFFF 50%, #EBEBEB 100%);
-    border-image-slice: 1; 
-    /* background:red; */
-
-    background: linear-gradient(96.78deg, #FFFFFF 0%, #F5F5F5 50%, #FFFFFF 100%);
-    
-}
 
 @media (max-width: 768px) {
     .product-features-grid {
@@ -861,8 +851,8 @@ input:checked+.slider::before {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid transparent; 
-    border-image: linear-gradient(96.78deg, #EBEBEB 0%, #FFFFFF 50%, #EBEBEB 100%);
+    border: 1px;
+    border-image-source: linear-gradient(128.05deg, #EBEBEB 0%, #FFFFFF 50.5%, #EBEBEB 100%);
     border-image-slice: 1;
     background: linear-gradient(96.78deg, #FFFFFF 0%, #F5F5F5 50%, #FFFFFF 100%);
     border-radius: 24px;
