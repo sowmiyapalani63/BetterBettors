@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +48,7 @@
                     <!-- Center the navbar items -->
                     <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
                         <li class="nav-item">
-                            <a class="nav-link  text-white text-7 fw-medium" aria-current="page"
+                            <a class="nav-link text-white text-7 fw-medium" aria-current="page"
                                 href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -81,7 +83,8 @@
 
                     <!-- LogIn form aligned properly -->
                     <div class="d-flex navbar-gap">
-                        <a href="./Login.html" class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap"
+                        <a href="./Login.html"
+                            class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap"
                             data-bs-toggle="modal" data-bs-target="#loginModal">
                             Log In
                         </a>
@@ -94,190 +97,164 @@
             </div>
         </div>
     </nav>
-    <section class="container py-4">
-        <div class="d-flex flex-column py-5  gap-2">
-            <h5 class="race-matrix-heading fw-medium text-center ">Welcome to Race Radar
-            </h5>
-            <p class="body-3 text-center"> Horse racing: the golden opportunity for matched bettors in Australia</p>
+    <section class="container">
+        <div class="spacing-60">
+            <div class="spacing-60 d-flex flex-column gap-3">
+                <h5 class=" fw-medium text-center  title-2 m-0">Welcome to Race Radar
+                </h5>
+                <p class=" fw-medium text-center body-3 m-0">Horse racing: the golden opportunity for matched bettors in
+                    Australiar
+                </p>
+            </div>
+            <div class="row align-items-center matrix-head ">
+                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column gap28">
+                    <span class="race-matrix-text body-3  fw-medium">
+                        Race Radar offers convenient filtering options based on race course or race time or even runners
+                        count. What sets Race Radar apart is the ability to track multiple upcoming race odds
+                        simultaneously, allowing you to place bets quickly when you spot a matched opportunity. For avid
+                        gamblers, Race Radar provides almost real-time market fluctuations across all races, enabling
+                        informed betting decisions.
+                    </span>
+                    <span class="race-matrix-text body-3 fw-medium">
+                        The Race Radar extension screen is your key to unlocking a world of betting opportunities.
+                    </span>
 
-        </div>
-        <div class="row align-items-center matrix-head ">
-            <!-- Text Content Section -->
-            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column text-div">
-                <span class="race-matrix-text fw-medium mb-3">
-                    Race Radar offers convenient filtering options based on race course or race time or even runners
-                    count. What sets Race Radar apart is the ability to track multiple upcoming race odds
-                    simultaneously, allowing you to place bets quickly when you spot a matched opportunity. For avid
-                    gamblers, Race Radar provides almost real-time market fluctuations across all races, enabling
-                    informed betting decisions.
-                </span>
-                <span class="race-matrix-text fw-medium">
-                    The Race Radar extension screen is your key to unlocking a world of betting opportunities.
-                </span>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column-reverse flex-lg-row">
+                    <img src="./assest/image/Horse-img.png" alt="Horse-img" class="race-matrix-img w-100">
+                </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column-reverse flex-lg-row">
-                <img src="./assest/image/Horse-img.png" alt="Horse-img" class="race-matrix-img w-100">
-            </div>
-        </div>
-        <div class="row py-5">
-            <div class="col-sm-12 col-lg-6">
-            </div>
-            <div class="col-sm-12 col-lg-6">
-                <h2 class="subtitle fw-medium ">Here's how it works:</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-between">
-            <div class="col-sm-12 col-lg-6 mb-4 d-flex">
-                <img src="./assest/image/horce-promo.png" alt="Horse-img" class="race-matrix-img w-100">
 
+
+            <div class=" row spacing-60  ">
+                <div class="col-sm-12 col-lg-6">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <h2 class="subtitle fw-medium ">Here's how it works:</h2>
+                </div>
             </div>
-            <div class="col-sm-12 col-lg-6 mb-4 d-flex">
-                <div class="accordion w-100" id="accordionExample">
-                    <!-- Accordion Item 1 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                aria-expanded="false" aria-controls="collapseOne">
-                                <span class="body-2 fw-medium">Race Radar Overview</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>The screen displays all races for the selected date, with useful filters.</li>
-                                    <li>Adjust the bookie stake and switch between real money and bonus cash
-                                        effortlessly.</li>
-                                    <li>Access Bet View to see odds available for your desired bet amount (defaulted to
-                                        $25)</li>
-                                </ul>
-                            </div>
 
-                        </div>
-                    </div>
+            <div class="row d-flex justify-content-between card-gap">
+                <div class="col-sm-12 col-lg-6 d-flex">
+                    <img src="./assest/image/horce-promo.png" alt="Horse-img" class="race-matrix-img w-100">
 
-                    <!-- Accordion Item 2 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header ">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="body-2 fw-medium">Navigating Races</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>The screen displays all races for the selected date, with useful filters.</li>
-                                    <li>Adjust the bookie stake and switch between real money and bonus cash
-                                        effortlessly.</li>
-                                    <li>Access Bet View to see odds available for your desired bet amount (defaulted to
-                                        $25)</li>
-                                </ul>
+                </div>
+                <div class="col-sm-12 col-lg-6 mb-4 d-flex">
+                    <div class="accordion w-100" id="accordionExample">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Race Radar Overview
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Accordion Item 3 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                <span class="body-2 fw-medium">Maximizing Opportunities</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>The screen displays all races for the selected date, with useful filters.</li>
-                                    <li>Adjust the bookie stake and switch between real money and bonus cash
-                                        effortlessly.</li>
-                                    <li>Access Bet View to see odds available for your desired bet amount (defaulted to
-                                        $25)</li>
-                                </ul>
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Navigating Races
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Accordion Item 4 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                aria-expanded="false" aria-controls="collapseFour">
-                                <span class="body-2 fw-medium">Seizing the Moment</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>The screen displays all races for the selected date, with useful filters.</li>
-                                    <li>Adjust the bookie stake and switch between real money and bonus cash
-                                        effortlessly.</li>
-                                    <li>Access Bet View to see odds available for your desired bet amount (defaulted to
-                                        $25)</li>
-                                </ul>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Maximizing Opportunities
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                aria-expanded="false" aria-controls="collapseFive">
-                                <span class="body-2 fw-medium">Bonus Bet Conversions</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>The screen displays all races for the selected date, with useful filters.</li>
-                                    <li>Adjust the bookie stake and switch between real money and bonus cash
-                                        effortlessly.</li>
-                                    <li>Access Bet View to see odds available for your desired bet amount (defaulted to
-                                        $25)</li>
-                                </ul>
+
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Seizing the Moment
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <!-- Accordion Item 2 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseContextualMessages"
-                                aria-expanded="false" aria-controls="collapseContextualMessages">
-                                <span class="body-2 fw-medium">Pro Tips</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseContextualMessages" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>The screen displays all races for the selected date, with useful filters.</li>
-                                    <li>Adjust the bookie stake and switch between real money and bonus cash
-                                        effortlessly.</li>
-                                    <li>Access Bet View to see odds available for your desired bet amount (defaulted to
-                                        $25)</li>
-                                </ul>
+                        <!-- Accordion Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    Bonus Bet Conversions
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq6">
+                                    Pro Tips
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <span class="body-3 race-matrix-text fw-medium py-5">The Race Radar experience is all about seizing
-                opportunities and maximizing your wins. Join the BetterBettors.com.au community today to elevate
-                your betting game!</span>
-
+            <h2 class="body-3 fw-medium race-matrix-text spacing-60">The Race Radar experience is all about seizing opportunities and
+                maximizing your wins. Join the BetterBettors.com.au community today to elevate your betting game!
+            </h2>
         </div>
     </section>
+
 
 
 

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,14 +28,14 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#370061;">
         <div class="container">
             <a class="navbar-brand text-white" href="#"><img src="./assest/image/Logo.png" alt="logo" class="w-100"></a>
-    
+
             <!-- Toggler Button (hidden on large screens) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"
                 style="color: white;">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="offcanvas offcanvas-end" style="background-color:#370061;" tabindex="-1"
                 id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
@@ -45,25 +48,31 @@
                     <!-- Center the navbar items -->
                     <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
                         <li class="nav-item">
-                            <a class="nav-link  text-white text-7 fw-medium" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link text-white text-7 fw-medium" aria-current="page"
+                                href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white text-7 fw-medium" href="./pays.html">Pays</a>
                         </li>
                         <li class="nav-item dropdown">
                             <!-- Dropdown Link -->
-                            <a class="nav-link text-white text-7 fw-medium dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                aria-expanded="false">
+                            <a class="nav-link text-white text-7 fw-medium dropdown-toggle" href="#" id="navbarDropdown"
+                                role="button" aria-expanded="false">
                                 Modules
                             </a>
                             <!-- Dropdown Menu -->
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#f8f9fa;">
-                                <li><a class="dropdown-item text-7 fw-medium" href="./my-bed-log-book.html">My Bet Log Book</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color:#f8f9fa;">
+                                <li><a class="dropdown-item text-7 fw-medium" href="./my-bed-log-book.html">My Bet Log
+                                        Book</a></li>
                                 <li><a class="dropdown-item text-7 fw-medium" href="#">My Bookie Promo</a></li>
                                 <li><a class="dropdown-item text-7 fw-medium" href="#">My Bookies</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./promo-mug-ratio.html">Promo Mug Ratio</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./race-radar.html">Race Radar</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./Race-matrix.html">Race Matrix</a></li>
+                                <li><a class="dropdown-item text-7 fw-medium" href="./promo-mug-ratio.html">Promo Mug
+                                        Ratio</a></li>
+                                <li><a class="dropdown-item text-7 fw-medium" href="./race-radar.html">Race Radar</a>
+                                </li>
+                                <li><a class="dropdown-item text-7 fw-medium" href="./Race-matrix.html">Race Matrix</a>
+                                </li>
                                 <li><a class="dropdown-item text-7 fw-medium" href="#">Race Planner</a></li>
                             </ul>
                         </li>
@@ -71,9 +80,11 @@
                             <a class="nav-link text-white text-7 fw-medium" href="./Subscription.html">Subscribe</a>
                         </li>
                     </ul>
-    
+
+                    <!-- LogIn form aligned properly -->
                     <div class="d-flex navbar-gap">
-                        <a href="./Login.html" class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap"
+                        <a href="./Login.html"
+                            class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap"
                             data-bs-toggle="modal" data-bs-target="#loginModal">
                             Log In
                         </a>
@@ -86,283 +97,258 @@
             </div>
         </div>
     </nav>
-    <section class="container py-4">
-        <div class="d-flex flex-column py-5  gap-2">
-            <h5 class="race-matrix-heading fw-medium text-center ">Welcome to My Bet Logbook
-            </h5>
+    <section class="container">
+        <div class="spacing-60">
+            <div class="spacing-60 d-flex flex-column gap-3">
+                <h5 class=" fw-medium text-center  title-2 m-0">Welcome to My Bet Logbook
+                </h5>
+            </div>
+            <div class="row align-items-center matrix-head ">
+                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column gap28">
+                    <span class="race-matrix-text body-3  fw-medium">
+                        Our Bet Logbook is the ultimate Module to track your selections and see how it performs. It's
+                        designed to display both planned and actual bets, giving you full control over your betting
+                        strategy.
+                    </span>
+                   
 
-        </div>
-        <div class="row align-items-center matrix-head ">
-            <!-- Text Content Section -->
-            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column text-div">
-                <span class="race-matrix-text fw-medium mb-3">
-                    Our Bet Logbook is the ultimate Module to track your selections and see how it performs. It's
-                    designed to display both planned and actual bets, giving you full control over your betting
-                    strategy.
-                </span>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column-reverse flex-lg-row">
+                    <img src="./assest/image/Horse-img.png" alt="Horse-img" class="race-matrix-img w-100">
+                </div>
+            </div>
 
-            </div>
-            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column-reverse flex-lg-row">
-                <img src="./assest/image/Horse-img.png" alt="Horse-img" class="race-matrix-img w-100">
-            </div>
-        </div>
-        <div class="row py-5">
-            <div class="col-sm-12 col-lg-6">
-            </div>
-            <div class="col-sm-12 col-lg-6">
-                <h2 class="subtitle fw-medium ">Here's what you can expect from our Bet Logbook Module:</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-between py-5">
-            <div class="col-sm-12 col-lg-6 mb-4 d-flex">
-                <img src="./assest/image/horce-promo.png" alt="Horse-img" class="race-matrix-img w-100">
 
+            <div class=" row spacing-60  ">
+                <div class="col-sm-12 col-lg-6">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <h2 class="subtitle fw-medium ">Here's what you can expect from our Bet Logbook Module:</h2>
+                </div>
             </div>
-            <div class="col-sm-12 col-lg-6 mb-4 d-flex">
-                <div class="accordion w-100" id="accordionExample">
-                    <!-- Accordion Item 1 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                aria-expanded="false" aria-controls="collapseOne">
-                                <span class="body-2 fw-medium">Seamless Integration</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+
+            <div class="row d-flex justify-content-between card-gap">
+                <div class="col-sm-12 col-lg-6 d-flex">
+                    <img src="./assest/image/horce-promo.png" alt="Horse-img" class="race-matrix-img w-100">
+
+                </div>
+                <div class="col-sm-12 col-lg-6 mb-4 d-flex">
+                    <div class="accordion w-100" id="accordionExample">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq14">
+                                    Seamless Integration
+                                </button>
+                            </h2>
+                            <div id="faq14" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    If the horse you choose is scratched, it will be removed from the 'planned table'
-                                    and updated in the table for scratched horses. This allows you to review and make
-                                    another selection in that race, ensuring that you never miss out on a promo
-                                    opportunity.
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 2 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header ">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="body-2 fw-medium">Scratch Management</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="accordion-body">
-                                    Our module provides a detailed snapshot of each bookie's promotional races,
-                                    displaying
-                                    the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                    informed and make informed decisions.
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Accordion Item 3 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                <span class="body-2 fw-medium">Commenting Feature</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq15">
+                                    Scratch Management  
+                                </button>
+                            </h2>
+                            <div id="faq15" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our module provides a detailed snapshot of each bookie's promotional races,
-                                    displaying
-                                    the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                    informed and make informed decisions.
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Accordion Item 4 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                aria-expanded="false" aria-controls="collapseFour">
-                                <span class="body-2 fw-medium">Time Difference Indicator</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq16">
+                                    Commenting Feature
+                                </button>
+                            </h2>
+                            <div id="faq16" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our module provides a detailed snapshot of each bookie's promotional races,
-                                    displaying
-                                    the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                    informed and make informed decisions.
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                aria-expanded="false" aria-controls="collapseFive">
-                                <span class="body-2 fw-medium">SmartAI column</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq17">
+                                    Time Difference Indicator
+                                </button>
+                            </h2>
+                            <div id="faq17" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our module provides a detailed snapshot of each bookie's promotional races,
-                                    displaying
-                                    the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                    informed and make informed decisions.
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
                                 </div>
                             </div>
                         </div>
+                        <!-- Accordion Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq18">
+                                    SmartAI column
+                                </button>
+                            </h2>
+                            <div id="faq18" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row d-flex justify-content-between flex-row-reverse">
-            <div class="col-sm-12 col-lg-6 mb-4 d-flex">
-                <img src="./assest/image/race-img.png" alt="Horse-img" class="race-matrix-img w-100">
-            </div>
-            <div class="col-sm-12 col-lg-6 mb-4 d-flex">
-                <div class="accordion w-100" id="accordionExample">
-                    <!-- Accordion Item 1 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                aria-expanded="false" aria-controls="collapseOne">
-                                <span class="body-2 fw-medium">Race Results</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                After the race is completed, the race results will be updated periodically in the
-                                system, which will subsequently update the running position of your selection and
-                                calculate the profit/loss of your bets.
-                            </div>
-                        </div>
-                    </div>
+            <div class="row d-flex justify-content-between card-gap spacing-60 flex-row-reverse">
+                <div class="col-sm-12 col-lg-6 d-flex">
+                    <img src="./assest/image/race-img.png" alt="Horse-img" class="race-matrix-img w-100">
 
-                    <!-- Accordion Item 2 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="body-2 fw-medium">Clear Result Indicators</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Our module provides a detailed snapshot of each bookie's promotional races, displaying
-                                the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                informed and make informed decisions.
+                </div>
+                <div class="col-sm-12 col-lg-6 mb-4 d-flex">
+                    <div class="accordion w-100" id="accordionExample">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq21">
+                                    Race Results
+                                </button>
+                            </h2>
+                            <div id="faq21" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Accordion Item 3 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                <span class="body-2 fw-medium">Instant Overrides</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Our module provides a detailed snapshot of each bookie's promotional races, displaying
-                                the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                informed and make informed decisions.
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq22">
+                                    Clear Result Indicators  
+                                </button>
+                            </h2>
+                            <div id="faq22" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Accordion Item 4 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                aria-expanded="false" aria-controls="collapseFour">
-                                <span class="body-2 fw-medium">Automatic Calculations</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Our module provides a detailed snapshot of each bookie's promotional races, displaying
-                                the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                informed and make informed decisions.
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq23">
+                                    Instant Overrides
+                                </button>
+                            </h2>
+                            <div id="faq23" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Accordion Item 5 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                aria-expanded="false" aria-controls="collapseFive">
-                                <span class="body-2 fw-medium">Bonus and Profit/Loss Calculation</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Our module provides a detailed snapshot of each bookie's promotional races, displaying
-                                the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                informed and make informed decisions.
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq24">
+                                    Automatic Calculations
+                                </button>
+                            </h2>
+                            <div id="faq24" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Accordion Item 6 -->
-                    <div class="accordion-item p-2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed d-flex justify-content-between w-100"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                aria-expanded="false" aria-controls="collapseSix">
-                                <span class="body-2 fw-medium">Back/Lay Bets</span>
-                                <i class="bi bi-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Our module provides a detailed snapshot of each bookie's promotional races, displaying
-                                the promotional-to-mug ratio and their current statuses. This allows you to stay
-                                informed and make informed decisions.
+                        <!-- Accordion Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq25">
+                                    Bonus and Profit/Loss Calculation
+                                </button>
+                            </h2>
+                            <div id="faq25" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
                             </div>
                         </div>
+                        <!-- Accordion Item 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-8">
+                                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq26">
+                                    Back/Lay Bets
+                                </button>
+                            </h2>
+                            <div id="faq26" class="accordion-collapse collapse text-7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our app provides valuable insights, tracks bets, and helps optimize betting
+                                    strategies. It integrates features like race schedules, promotions, and real-time
+                                    odds comparisons to enhance your betting decisions and increase profitability.
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
+            <h2 class="body-3 fw-medium race-matrix-text spacing-60 pt-0">The Race Radar experience is all about seizing
+                opportunities and
+                maximizing your wins. Join the BetterBettors.com.au community today to elevate your betting game!
+            </h2>
         </div>
-        <div class="py-5 d-flex flex-column gap-3">
-            <p class="body-3 race-matrix-text fw-medium"><span class="body-3 span-text fw-medium">Remember:</span> Don't
-                forget to press save after updating each
-                row to ensure your changes are saved. We wouldn't want you to lose any valuable information.</p>
-            <p class="body-3 race-matrix-text fw-medium ">Our dedicated team is
-                    working tirelessly to <span class=" body-3 span-text fw-medium"> expand the range of sports </span> available on BetterBettors. Meanwhile, we have
-                    temporarily introduced an '<span class=" body-3 span-text fw-medium"> other bets </span>' option that allows you to conveniently track your profits and
-                    losses across multiple sporting events through our website.
-        </div>
-
     </section>
+
 
 
 
