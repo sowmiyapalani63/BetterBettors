@@ -21,79 +21,67 @@
 
 <body>
 
-    <!-- Navbar -->
+   <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#370061; padding-top : 20px; padding-bottom : 20px;">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#"><img src="./assest/image/Logo.png" alt="logo" class="w-100"></a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#370061;">
-        <div class="container">
-            <a class="navbar-brand text-white" href="#"><img src="./assest/image/Logo.png" alt="logo" class="w-100"></a>
+        <!-- Toggler Button (hidden on large screens) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"
+            style="color: white;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Toggler Button (hidden on large screens) -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"
-                style="color: white;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-end" style="background-color:#370061;" tabindex="-1"
-                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel"><img
-                            src="./assest/image/Logo.png" alt="logo" class="w-100"></h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" style="background-color: #370061;">
-                    <!-- Center the navbar items -->
-                    <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
-                        <li class="nav-item">
-                            <a class="nav-link  text-white text-7 fw-medium" aria-current="page"
-                                href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-7 fw-medium" href="./pays.html">Pays</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <!-- Dropdown Link -->
-                            <a class="nav-link text-white text-7 fw-medium dropdown-toggle" href="#" id="navbarDropdown"
-                                role="button" aria-expanded="false">
-                                Modules
-                            </a>
-                            <!-- Dropdown Menu -->
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
-                                style="background-color:#f8f9fa;">
-                                <li><a class="dropdown-item text-7 fw-medium" href="./my-bed-log-book.html">My Bet Log
-                                        Book</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="#">My Bookie Promo</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="#">My Bookies</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./promo-mug-ratio.html">Promo Mug
-                                        Ratio</a></li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./race-radar.html">Race Radar</a>
-                                </li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="./Race-matrix.html">Race Matrix</a>
-                                </li>
-                                <li><a class="dropdown-item text-7 fw-medium" href="#">Race Planner</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-7 fw-medium" href="./Subscription.html">Subscribe</a>
-                        </li>
-                    </ul>
-
-                    <!-- LogIn form aligned properly -->
-                    <div class="d-flex navbar-gap">
-                        <a href="./Login.html" class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap"
-                            data-bs-toggle="modal" data-bs-target="#loginModal">
-                            Log In
+        <div class="offcanvas offcanvas-end" style="background-color:#370061;" tabindex="-1"
+            id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel"><img
+                        src="./assest/image/Logo.png" alt="logo" class="w-100"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="background-color: #370061;">
+                <!-- Center the navbar items -->
+                <ul class="navbar-nav justify-content-center flex-grow-1 navbar-gap" style="width: 100%;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white text-7 fw-medium" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-7 fw-medium" href="./pays.html">Pays</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- Dropdown Link -->
+                        <a class="nav-link text-white text-7 fw-medium dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            aria-expanded="false">
+                            Modules
                         </a>
-                        <a href="./Register.html" class="btn bg-white text-7 fw-medium" style="color: #370061;"
-                            type="submit">
-                            Register
-                        </a>
-                    </div>
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#f8f9fa;">
+                            <li><a class="dropdown-item text-7 fw-medium" href="./my-bed-log-book.html">My Bet Log Book</a></li>
+                            <li><a class="dropdown-item text-7 fw-medium" href="./bookiePromo.html">My Bookie Promo</a></li>
+                            <li><a class="dropdown-item text-7 fw-medium" href="./myBookies.html">My Bookies</a></li>
+                            <li><a class="dropdown-item text-7 fw-medium" href="./promo-mug-ratio.html">Promo Mug Ratio</a></li>
+                            <li><a class="dropdown-item text-7 fw-medium" href="./race-radar.html">Race Radar</a></li>
+                            <li><a class="dropdown-item text-7 fw-medium" href="./Race-matrix.html">Race Matrix</a></li>
+                            <li><a class="dropdown-item text-7 fw-medium" href="./racingPlanner.html">Race Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-7 fw-medium" href="#">Subscribe</a>
+                    </li>
+                </ul>
+
+                <!-- LogIn form aligned properly -->
+                <div class="d-flex align-items-center justify-content-center navbar-gap">
+                    <button class="btn bg-none text-white border rounded text-7 fw-medium text-nowrap"
+                        data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+                    <button class="btn bg-white text-7 fw-medium" style="color: #370061;" type="submit">Register</button>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
     <section class="container py-4">
         <div class="d-flex flex-column py-5  gap-2">
             <h5 class="race-matrix-heading fw-medium text-center ">Welcome to Race Radar

@@ -142,6 +142,11 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footerclass{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 @media (max-width: 630px) {
     .spacing {
@@ -175,6 +180,7 @@ body {
     .spacing-sm-48 {
         padding-top: 28px;
     }
+ 
 
 }
 
@@ -422,15 +428,24 @@ body {
     padding: 4px 1px 4px 4px;
 }
 
+
 .a-link {
     color: #7200CB;
 }
+.btn{
+    border-radius: 4px !important;
 
+}
 @media (max-width: 468px) {
     .faq-img img {
         max-width: 320px;
         max-height: 299px;
     }
+    .footerclass{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } 
 }
 
 /* Murali */
